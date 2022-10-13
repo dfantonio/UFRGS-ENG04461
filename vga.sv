@@ -1,14 +1,14 @@
 `default_nettype none
 `timescale 10ns / 10ns
 
-module simple_480p (
+module vga (
     input  wire logic clk,   // pixel clock
     input  wire logic reset,   // reset in pixel clock domain
-    output      logic [9:0] sx,  // horizontal screen position
-    output      logic [9:0] sy,  // vertical screen position
-    output      logic hsync,     // horizontal sync
-    output      logic vsync,     // vertical sync
-    output      logic de         // data enable (low in blanking interval)
+    output      logic [9:0] sx = 0,  // horizontal screen position
+    output      logic [9:0] sy = 0,  // vertical screen position
+    output      logic hsync = 1,     // horizontal sync
+    output      logic vsync = 1,     // vertical sync
+    output      logic de = 1         // data enable (low in blanking interval)
     );
 
     // horizontal timings
@@ -44,7 +44,7 @@ module simple_480p (
     end
 endmodule
 
-module simple_480p_tb;
+module vga_tb;
   reg clk, reset;
   logic [9:0]sy;
   logic [9:0]sx;
@@ -52,7 +52,7 @@ module simple_480p_tb;
 
 	parameter stimDelay = 2;
 
-  simple_480p controlador_VGA (clk, reset, sx, sy, hsync, vsync, de);
+  vga controlador_VGA (clk, reset, sx, sy, hsync, vsync, de);
 
   initial begin 
     clk = 0;
