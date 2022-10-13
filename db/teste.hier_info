@@ -1,0 +1,101 @@
+|top_square
+clk_50m => clock_480p:clock_pix_inst.clk_50m
+btn_rst_n => clock_480p:clock_pix_inst.rst
+vga_hsync <= <GND>
+vga_vsync <= <GND>
+vga_r[0] <= <GND>
+vga_r[1] <= <GND>
+vga_r[2] <= <GND>
+vga_r[3] <= <GND>
+vga_g[0] <= <GND>
+vga_g[1] <= <GND>
+vga_g[2] <= <GND>
+vga_g[3] <= <GND>
+vga_b[0] <= <GND>
+vga_b[1] <= <GND>
+vga_b[2] <= <GND>
+vga_b[3] <= <GND>
+TESTE[0] <= <GND>
+TESTE[1] <= <GND>
+TESTE[2] <= <GND>
+TESTE[3] <= <GND>
+TESTE[4] <= <GND>
+TESTE[5] <= <GND>
+TESTE[6] <= <GND>
+TESTE[7] <= <GND>
+TESTE[8] <= <GND>
+TESTE[9] <= <GND>
+
+
+|top_square|clock_480p:clock_pix_inst
+clk_50m => clk_pix~reg0.CLK
+rst => clk_pix.OUTPUTSELECT
+clk_pix <= clk_pix~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_square|simple_480p:display_inst
+clk => sy[0]~reg0.CLK
+clk => sy[1]~reg0.CLK
+clk => sy[2]~reg0.CLK
+clk => sy[3]~reg0.CLK
+clk => sy[4]~reg0.CLK
+clk => sy[5]~reg0.CLK
+clk => sy[6]~reg0.CLK
+clk => sy[7]~reg0.CLK
+clk => sy[8]~reg0.CLK
+clk => sy[9]~reg0.CLK
+clk => sx[0]~reg0.CLK
+clk => sx[1]~reg0.CLK
+clk => sx[2]~reg0.CLK
+clk => sx[3]~reg0.CLK
+clk => sx[4]~reg0.CLK
+clk => sx[5]~reg0.CLK
+clk => sx[6]~reg0.CLK
+clk => sx[7]~reg0.CLK
+clk => sx[8]~reg0.CLK
+clk => sx[9]~reg0.CLK
+reset => sx.OUTPUTSELECT
+reset => sx.OUTPUTSELECT
+reset => sx.OUTPUTSELECT
+reset => sx.OUTPUTSELECT
+reset => sx.OUTPUTSELECT
+reset => sx.OUTPUTSELECT
+reset => sx.OUTPUTSELECT
+reset => sx.OUTPUTSELECT
+reset => sx.OUTPUTSELECT
+reset => sx.OUTPUTSELECT
+reset => sy.OUTPUTSELECT
+reset => sy.OUTPUTSELECT
+reset => sy.OUTPUTSELECT
+reset => sy.OUTPUTSELECT
+reset => sy.OUTPUTSELECT
+reset => sy.OUTPUTSELECT
+reset => sy.OUTPUTSELECT
+reset => sy.OUTPUTSELECT
+reset => sy.OUTPUTSELECT
+reset => sy.OUTPUTSELECT
+sx[0] <= sx[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sx[1] <= sx[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sx[2] <= sx[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sx[3] <= sx[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sx[4] <= sx[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sx[5] <= sx[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sx[6] <= sx[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sx[7] <= sx[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sx[8] <= sx[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sx[9] <= sx[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sy[0] <= sy[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sy[1] <= sy[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sy[2] <= sy[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sy[3] <= sy[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sy[4] <= sy[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sy[5] <= sy[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sy[6] <= sy[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sy[7] <= sy[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sy[8] <= sy[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sy[9] <= sy[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+hsync <= hsync.DB_MAX_OUTPUT_PORT_TYPE
+vsync <= vsync.DB_MAX_OUTPUT_PORT_TYPE
+de <= de.DB_MAX_OUTPUT_PORT_TYPE
+
+

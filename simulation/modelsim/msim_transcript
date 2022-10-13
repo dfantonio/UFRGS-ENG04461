@@ -1,0 +1,138 @@
+# Reading D:/Programas/Altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do teste_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\Programas\Altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\Programas\Altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga {C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module simple_480p
+# -- Compiling module simple_480p_tb
+# 
+# Top level modules:
+# 	simple_480p_tb
+# vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga {C:/Users/anton/Documents/Projetos/pong-fpga/clock_480p.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_480p
+# -- Compiling module clock_480p_tb
+# 
+# Top level modules:
+# 	clock_480p_tb
+# vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga {C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top_square
+# -- Compiling module top_square_tb
+# 
+# Top level modules:
+# 	top_square_tb
+# 
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/clock_480p.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_480p
+# -- Compiling module clock_480p_tb
+# 
+# Top level modules:
+# 	clock_480p_tb
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/clock_480p.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock_480p
+# -- Compiling module clock_480p_tb
+# 
+# Top level modules:
+# 	clock_480p_tb
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module simple_480p
+# -- Compiling module simple_480p_tb
+# 
+# Top level modules:
+# 	simple_480p_tb
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module simple_480p
+# -- Compiling module simple_480p_tb
+# 
+# Top level modules:
+# 	simple_480p_tb
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top_square
+# -- Compiling module top_square_tb
+# 
+# Top level modules:
+# 	top_square_tb
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module top_square
+# -- Compiling module top_square_tb
+# 
+# Top level modules:
+# 	top_square_tb
+vsim -voptargs=+acc work.top_square_tb
+# vsim -voptargs=+acc work.top_square_tb 
+# Loading sv_std.std
+# Loading work.top_square_tb
+# Loading work.top_square
+# Loading work.clock_480p
+# Loading work.simple_480p
+# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv(40): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv(6).
+# 
+#         Region: /top_square_tb/gerador_vga/display_inst
+add wave -position insertpoint  \
+sim:/top_square_tb/vga_vsync
+run
+add wave -position insertpoint  \
+sim:/top_square_tb/gerador_vga/display_inst/clk \
+sim:/top_square_tb/gerador_vga/display_inst/reset \
+sim:/top_square_tb/gerador_vga/display_inst/sx \
+sim:/top_square_tb/gerador_vga/display_inst/sy \
+sim:/top_square_tb/gerador_vga/display_inst/hsync \
+sim:/top_square_tb/gerador_vga/display_inst/vsync \
+sim:/top_square_tb/gerador_vga/display_inst/de
+run
+quit -sim
+vsim -voptargs=+acc work.top_square
+# vsim -voptargs=+acc work.top_square 
+# Loading sv_std.std
+# Loading work.top_square
+# Loading work.clock_480p
+# Loading work.simple_480p
+# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv(40): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv(6).
+# 
+#         Region: /top_square/display_inst
+add wave -position insertpoint  \
+sim:/top_square/display_inst/clk \
+sim:/top_square/display_inst/reset \
+sim:/top_square/display_inst/sx \
+sim:/top_square/display_inst/sy \
+sim:/top_square/display_inst/hsync \
+sim:/top_square/display_inst/vsync \
+sim:/top_square/display_inst/de
+run
+# Break key hit 
+quit -sim
+vsim -voptargs=+acc work.top_square_tb
+# vsim -voptargs=+acc work.top_square_tb 
+# Loading sv_std.std
+# Loading work.top_square_tb
+# Loading work.top_square
+# Loading work.clock_480p
+# Loading work.simple_480p
+# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv(40): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv(6).
+# 
+#         Region: /top_square_tb/gerador_vga/display_inst
+add wave -position insertpoint  \
+sim:/top_square_tb/gerador_vga/display_inst/clk \
+sim:/top_square_tb/gerador_vga/display_inst/reset \
+sim:/top_square_tb/gerador_vga/display_inst/sx \
+sim:/top_square_tb/gerador_vga/display_inst/sy \
+sim:/top_square_tb/gerador_vga/display_inst/hsync \
+sim:/top_square_tb/gerador_vga/display_inst/vsync \
+sim:/top_square_tb/gerador_vga/display_inst/de
+run

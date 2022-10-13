@@ -1,0 +1,396 @@
+Simulator report for teste
+Tue Oct 11 21:35:32 2022
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 100.0 us     ;
+; Simulation Netlist Size     ; 237 nodes    ;
+; Simulation Coverage         ;     100.00 % ;
+; Total Number of Transitions ; 11903718     ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                                                                           ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------+---------------+
+; Option                                                                                     ; Setting                                                         ; Default Value ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------+---------------+
+; Simulation mode                                                                            ; Functional                                                      ; Timing        ;
+; Start time                                                                                 ; 0 ns                                                            ; 0 ns          ;
+; Simulation results format                                                                  ; VWF                                                             ;               ;
+; Vector input source                                                                        ; C:/Users/anton/Documents/Projetos/pong-fpga/qsim_top_square.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On                                                              ; On            ;
+; Check outputs                                                                              ; Off                                                             ; Off           ;
+; Report simulation coverage                                                                 ; On                                                              ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On                                                              ; On            ;
+; Display missing 1-value coverage report                                                    ; On                                                              ; On            ;
+; Display missing 0-value coverage report                                                    ; On                                                              ; On            ;
+; Detect setup and hold time violations                                                      ; Off                                                             ; Off           ;
+; Detect glitches                                                                            ; Off                                                             ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off                                                             ; Off           ;
+; Generate Signal Activity File                                                              ; Off                                                             ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off                                                             ; Off           ;
+; Group bus channels in simulation results                                                   ; Off                                                             ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On                                                              ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE                                                      ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off                                                             ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off                                                             ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto                                                            ; Auto          ;
++--------------------------------------------------------------------------------------------+-----------------------------------------------------------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II 64-Bit to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;     100.00 % ;
+; Total nodes checked                                 ; 237          ;
+; Total output ports checked                          ; 236          ;
+; Total output ports with complete 1/0-value coverage ; 236          ;
+; Total output ports with no 1/0-value coverage       ; 0            ;
+; Total output ports with no 1-value coverage         ; 0            ;
+; Total output ports with no 0-value coverage         ; 0            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                              ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; Node Name                                         ; Output Port Name                                  ; Output Port Type ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+; |top_square|square                                ; |top_square|square                                ; out0             ;
+; |top_square|vga_r~0                               ; |top_square|vga_r~0                               ; out              ;
+; |top_square|vga_r~1                               ; |top_square|vga_r~1                               ; out              ;
+; |top_square|vga_r~2                               ; |top_square|vga_r~2                               ; out              ;
+; |top_square|vga_g~0                               ; |top_square|vga_g~0                               ; out              ;
+; |top_square|vga_g~1                               ; |top_square|vga_g~1                               ; out              ;
+; |top_square|vga_b~0                               ; |top_square|vga_b~0                               ; out              ;
+; |top_square|vga_b[0]~reg0                         ; |top_square|vga_b[0]~reg0                         ; regout           ;
+; |top_square|vga_b[1]~reg0                         ; |top_square|vga_b[1]~reg0                         ; regout           ;
+; |top_square|vga_b[2]~reg0                         ; |top_square|vga_b[2]~reg0                         ; regout           ;
+; |top_square|vga_b[3]~reg0                         ; |top_square|vga_b[3]~reg0                         ; regout           ;
+; |top_square|vga_g[0]~reg0                         ; |top_square|vga_g[0]~reg0                         ; regout           ;
+; |top_square|vga_g[1]~reg0                         ; |top_square|vga_g[1]~reg0                         ; regout           ;
+; |top_square|vga_g[2]~reg0                         ; |top_square|vga_g[2]~reg0                         ; regout           ;
+; |top_square|vga_g[3]~reg0                         ; |top_square|vga_g[3]~reg0                         ; regout           ;
+; |top_square|vga_r[0]~reg0                         ; |top_square|vga_r[0]~reg0                         ; regout           ;
+; |top_square|vga_r[1]~reg0                         ; |top_square|vga_r[1]~reg0                         ; regout           ;
+; |top_square|vga_r[2]~reg0                         ; |top_square|vga_r[2]~reg0                         ; regout           ;
+; |top_square|vga_r[3]~reg0                         ; |top_square|vga_r[3]~reg0                         ; regout           ;
+; |top_square|TESTE[0]~reg0                         ; |top_square|TESTE[0]~reg0                         ; regout           ;
+; |top_square|TESTE[1]~reg0                         ; |top_square|TESTE[1]~reg0                         ; regout           ;
+; |top_square|TESTE[2]~reg0                         ; |top_square|TESTE[2]~reg0                         ; regout           ;
+; |top_square|TESTE[3]~reg0                         ; |top_square|TESTE[3]~reg0                         ; regout           ;
+; |top_square|TESTE[4]~reg0                         ; |top_square|TESTE[4]~reg0                         ; regout           ;
+; |top_square|TESTE[5]~reg0                         ; |top_square|TESTE[5]~reg0                         ; regout           ;
+; |top_square|TESTE[6]~reg0                         ; |top_square|TESTE[6]~reg0                         ; regout           ;
+; |top_square|TESTE[7]~reg0                         ; |top_square|TESTE[7]~reg0                         ; regout           ;
+; |top_square|TESTE[8]~reg0                         ; |top_square|TESTE[8]~reg0                         ; regout           ;
+; |top_square|TESTE[9]~reg0                         ; |top_square|TESTE[9]~reg0                         ; regout           ;
+; |top_square|vga_vsync~reg0                        ; |top_square|vga_vsync~reg0                        ; regout           ;
+; |top_square|vga_hsync~reg0                        ; |top_square|vga_hsync~reg0                        ; regout           ;
+; |top_square|clk_100m                              ; |top_square|clk_100m                              ; out              ;
+; |top_square|vga_hsync                             ; |top_square|vga_hsync                             ; pin_out          ;
+; |top_square|vga_vsync                             ; |top_square|vga_vsync                             ; pin_out          ;
+; |top_square|vga_r[0]                              ; |top_square|vga_r[0]                              ; pin_out          ;
+; |top_square|vga_r[1]                              ; |top_square|vga_r[1]                              ; pin_out          ;
+; |top_square|vga_r[2]                              ; |top_square|vga_r[2]                              ; pin_out          ;
+; |top_square|vga_r[3]                              ; |top_square|vga_r[3]                              ; pin_out          ;
+; |top_square|vga_g[0]                              ; |top_square|vga_g[0]                              ; pin_out          ;
+; |top_square|vga_g[1]                              ; |top_square|vga_g[1]                              ; pin_out          ;
+; |top_square|vga_g[2]                              ; |top_square|vga_g[2]                              ; pin_out          ;
+; |top_square|vga_g[3]                              ; |top_square|vga_g[3]                              ; pin_out          ;
+; |top_square|vga_b[0]                              ; |top_square|vga_b[0]                              ; pin_out          ;
+; |top_square|vga_b[1]                              ; |top_square|vga_b[1]                              ; pin_out          ;
+; |top_square|vga_b[2]                              ; |top_square|vga_b[2]                              ; pin_out          ;
+; |top_square|vga_b[3]                              ; |top_square|vga_b[3]                              ; pin_out          ;
+; |top_square|TESTE[0]                              ; |top_square|TESTE[0]                              ; pin_out          ;
+; |top_square|TESTE[1]                              ; |top_square|TESTE[1]                              ; pin_out          ;
+; |top_square|TESTE[2]                              ; |top_square|TESTE[2]                              ; pin_out          ;
+; |top_square|TESTE[3]                              ; |top_square|TESTE[3]                              ; pin_out          ;
+; |top_square|TESTE[4]                              ; |top_square|TESTE[4]                              ; pin_out          ;
+; |top_square|TESTE[5]                              ; |top_square|TESTE[5]                              ; pin_out          ;
+; |top_square|TESTE[6]                              ; |top_square|TESTE[6]                              ; pin_out          ;
+; |top_square|TESTE[7]                              ; |top_square|TESTE[7]                              ; pin_out          ;
+; |top_square|TESTE[8]                              ; |top_square|TESTE[8]                              ; pin_out          ;
+; |top_square|TESTE[9]                              ; |top_square|TESTE[9]                              ; pin_out          ;
+; |top_square|simple_480p:display_inst|hsync~0      ; |top_square|simple_480p:display_inst|hsync~0      ; out0             ;
+; |top_square|simple_480p:display_inst|vsync~0      ; |top_square|simple_480p:display_inst|vsync~0      ; out0             ;
+; |top_square|simple_480p:display_inst|de           ; |top_square|simple_480p:display_inst|de           ; out0             ;
+; |top_square|simple_480p:display_inst|sy[1]        ; |top_square|simple_480p:display_inst|sy[1]        ; regout           ;
+; |top_square|simple_480p:display_inst|sy[0]        ; |top_square|simple_480p:display_inst|sy[0]        ; regout           ;
+; |top_square|simple_480p:display_inst|sy~0         ; |top_square|simple_480p:display_inst|sy~0         ; out              ;
+; |top_square|simple_480p:display_inst|sy~1         ; |top_square|simple_480p:display_inst|sy~1         ; out              ;
+; |top_square|simple_480p:display_inst|sy~2         ; |top_square|simple_480p:display_inst|sy~2         ; out              ;
+; |top_square|simple_480p:display_inst|sy~3         ; |top_square|simple_480p:display_inst|sy~3         ; out              ;
+; |top_square|simple_480p:display_inst|sy~4         ; |top_square|simple_480p:display_inst|sy~4         ; out              ;
+; |top_square|simple_480p:display_inst|sy~5         ; |top_square|simple_480p:display_inst|sy~5         ; out              ;
+; |top_square|simple_480p:display_inst|sy~6         ; |top_square|simple_480p:display_inst|sy~6         ; out              ;
+; |top_square|simple_480p:display_inst|sy~7         ; |top_square|simple_480p:display_inst|sy~7         ; out              ;
+; |top_square|simple_480p:display_inst|sy~8         ; |top_square|simple_480p:display_inst|sy~8         ; out              ;
+; |top_square|simple_480p:display_inst|sy~9         ; |top_square|simple_480p:display_inst|sy~9         ; out              ;
+; |top_square|simple_480p:display_inst|sx~0         ; |top_square|simple_480p:display_inst|sx~0         ; out              ;
+; |top_square|simple_480p:display_inst|sx~1         ; |top_square|simple_480p:display_inst|sx~1         ; out              ;
+; |top_square|simple_480p:display_inst|sx~2         ; |top_square|simple_480p:display_inst|sx~2         ; out              ;
+; |top_square|simple_480p:display_inst|sx~3         ; |top_square|simple_480p:display_inst|sx~3         ; out              ;
+; |top_square|simple_480p:display_inst|sx~4         ; |top_square|simple_480p:display_inst|sx~4         ; out              ;
+; |top_square|simple_480p:display_inst|sx~5         ; |top_square|simple_480p:display_inst|sx~5         ; out              ;
+; |top_square|simple_480p:display_inst|sx~6         ; |top_square|simple_480p:display_inst|sx~6         ; out              ;
+; |top_square|simple_480p:display_inst|sx~7         ; |top_square|simple_480p:display_inst|sx~7         ; out              ;
+; |top_square|simple_480p:display_inst|sx~8         ; |top_square|simple_480p:display_inst|sx~8         ; out              ;
+; |top_square|simple_480p:display_inst|sx~9         ; |top_square|simple_480p:display_inst|sx~9         ; out              ;
+; |top_square|simple_480p:display_inst|sy~10        ; |top_square|simple_480p:display_inst|sy~10        ; out              ;
+; |top_square|simple_480p:display_inst|sy~11        ; |top_square|simple_480p:display_inst|sy~11        ; out              ;
+; |top_square|simple_480p:display_inst|sy~12        ; |top_square|simple_480p:display_inst|sy~12        ; out              ;
+; |top_square|simple_480p:display_inst|sy~13        ; |top_square|simple_480p:display_inst|sy~13        ; out              ;
+; |top_square|simple_480p:display_inst|sy~14        ; |top_square|simple_480p:display_inst|sy~14        ; out              ;
+; |top_square|simple_480p:display_inst|sy~15        ; |top_square|simple_480p:display_inst|sy~15        ; out              ;
+; |top_square|simple_480p:display_inst|sy~16        ; |top_square|simple_480p:display_inst|sy~16        ; out              ;
+; |top_square|simple_480p:display_inst|sy~17        ; |top_square|simple_480p:display_inst|sy~17        ; out              ;
+; |top_square|simple_480p:display_inst|sy~18        ; |top_square|simple_480p:display_inst|sy~18        ; out              ;
+; |top_square|simple_480p:display_inst|sy~19        ; |top_square|simple_480p:display_inst|sy~19        ; out              ;
+; |top_square|simple_480p:display_inst|sy[2]        ; |top_square|simple_480p:display_inst|sy[2]        ; regout           ;
+; |top_square|simple_480p:display_inst|sy[3]        ; |top_square|simple_480p:display_inst|sy[3]        ; regout           ;
+; |top_square|simple_480p:display_inst|sy[4]        ; |top_square|simple_480p:display_inst|sy[4]        ; regout           ;
+; |top_square|simple_480p:display_inst|sy[5]        ; |top_square|simple_480p:display_inst|sy[5]        ; regout           ;
+; |top_square|simple_480p:display_inst|sy[6]        ; |top_square|simple_480p:display_inst|sy[6]        ; regout           ;
+; |top_square|simple_480p:display_inst|sy[7]        ; |top_square|simple_480p:display_inst|sy[7]        ; regout           ;
+; |top_square|simple_480p:display_inst|sy[8]        ; |top_square|simple_480p:display_inst|sy[8]        ; regout           ;
+; |top_square|simple_480p:display_inst|sy[9]        ; |top_square|simple_480p:display_inst|sy[9]        ; regout           ;
+; |top_square|simple_480p:display_inst|sx[0]        ; |top_square|simple_480p:display_inst|sx[0]        ; regout           ;
+; |top_square|simple_480p:display_inst|sx[1]        ; |top_square|simple_480p:display_inst|sx[1]        ; regout           ;
+; |top_square|simple_480p:display_inst|sx[2]        ; |top_square|simple_480p:display_inst|sx[2]        ; regout           ;
+; |top_square|simple_480p:display_inst|sx[3]        ; |top_square|simple_480p:display_inst|sx[3]        ; regout           ;
+; |top_square|simple_480p:display_inst|sx[4]        ; |top_square|simple_480p:display_inst|sx[4]        ; regout           ;
+; |top_square|simple_480p:display_inst|sx[5]        ; |top_square|simple_480p:display_inst|sx[5]        ; regout           ;
+; |top_square|simple_480p:display_inst|sx[6]        ; |top_square|simple_480p:display_inst|sx[6]        ; regout           ;
+; |top_square|simple_480p:display_inst|sx[7]        ; |top_square|simple_480p:display_inst|sx[7]        ; regout           ;
+; |top_square|simple_480p:display_inst|sx[8]        ; |top_square|simple_480p:display_inst|sx[8]        ; regout           ;
+; |top_square|simple_480p:display_inst|sx[9]        ; |top_square|simple_480p:display_inst|sx[9]        ; regout           ;
+; |top_square|clock_480p:clock_pix_inst|clk_pix     ; |top_square|clock_480p:clock_pix_inst|clk_pix     ; regout           ;
+; |top_square|LessThan0~0                           ; |top_square|LessThan0~0                           ; out0             ;
+; |top_square|LessThan0~1                           ; |top_square|LessThan0~1                           ; out0             ;
+; |top_square|LessThan0~2                           ; |top_square|LessThan0~2                           ; out0             ;
+; |top_square|LessThan0~3                           ; |top_square|LessThan0~3                           ; out0             ;
+; |top_square|LessThan0~4                           ; |top_square|LessThan0~4                           ; out0             ;
+; |top_square|LessThan0~5                           ; |top_square|LessThan0~5                           ; out0             ;
+; |top_square|LessThan0~6                           ; |top_square|LessThan0~6                           ; out0             ;
+; |top_square|LessThan0~7                           ; |top_square|LessThan0~7                           ; out0             ;
+; |top_square|LessThan0~8                           ; |top_square|LessThan0~8                           ; out0             ;
+; |top_square|LessThan0~9                           ; |top_square|LessThan0~9                           ; out0             ;
+; |top_square|LessThan0~10                          ; |top_square|LessThan0~10                          ; out0             ;
+; |top_square|LessThan0~11                          ; |top_square|LessThan0~11                          ; out0             ;
+; |top_square|LessThan0~12                          ; |top_square|LessThan0~12                          ; out0             ;
+; |top_square|LessThan1~0                           ; |top_square|LessThan1~0                           ; out0             ;
+; |top_square|LessThan1~1                           ; |top_square|LessThan1~1                           ; out0             ;
+; |top_square|LessThan1~2                           ; |top_square|LessThan1~2                           ; out0             ;
+; |top_square|LessThan1~3                           ; |top_square|LessThan1~3                           ; out0             ;
+; |top_square|LessThan1~4                           ; |top_square|LessThan1~4                           ; out0             ;
+; |top_square|LessThan1~5                           ; |top_square|LessThan1~5                           ; out0             ;
+; |top_square|LessThan1~6                           ; |top_square|LessThan1~6                           ; out0             ;
+; |top_square|LessThan1~7                           ; |top_square|LessThan1~7                           ; out0             ;
+; |top_square|LessThan1~8                           ; |top_square|LessThan1~8                           ; out0             ;
+; |top_square|LessThan1~9                           ; |top_square|LessThan1~9                           ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan0~0  ; |top_square|simple_480p:display_inst|LessThan0~0  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan0~1  ; |top_square|simple_480p:display_inst|LessThan0~1  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan0~2  ; |top_square|simple_480p:display_inst|LessThan0~2  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan0~3  ; |top_square|simple_480p:display_inst|LessThan0~3  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan0~4  ; |top_square|simple_480p:display_inst|LessThan0~4  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan0~5  ; |top_square|simple_480p:display_inst|LessThan0~5  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan0~6  ; |top_square|simple_480p:display_inst|LessThan0~6  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan0~7  ; |top_square|simple_480p:display_inst|LessThan0~7  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan0~8  ; |top_square|simple_480p:display_inst|LessThan0~8  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan0~9  ; |top_square|simple_480p:display_inst|LessThan0~9  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan0~10 ; |top_square|simple_480p:display_inst|LessThan0~10 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan0~11 ; |top_square|simple_480p:display_inst|LessThan0~11 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan0~12 ; |top_square|simple_480p:display_inst|LessThan0~12 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~0  ; |top_square|simple_480p:display_inst|LessThan1~0  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~1  ; |top_square|simple_480p:display_inst|LessThan1~1  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~2  ; |top_square|simple_480p:display_inst|LessThan1~2  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~3  ; |top_square|simple_480p:display_inst|LessThan1~3  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~4  ; |top_square|simple_480p:display_inst|LessThan1~4  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~5  ; |top_square|simple_480p:display_inst|LessThan1~5  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~6  ; |top_square|simple_480p:display_inst|LessThan1~6  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~7  ; |top_square|simple_480p:display_inst|LessThan1~7  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~8  ; |top_square|simple_480p:display_inst|LessThan1~8  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~9  ; |top_square|simple_480p:display_inst|LessThan1~9  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~10 ; |top_square|simple_480p:display_inst|LessThan1~10 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~11 ; |top_square|simple_480p:display_inst|LessThan1~11 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~12 ; |top_square|simple_480p:display_inst|LessThan1~12 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~13 ; |top_square|simple_480p:display_inst|LessThan1~13 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~14 ; |top_square|simple_480p:display_inst|LessThan1~14 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan1~15 ; |top_square|simple_480p:display_inst|LessThan1~15 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan2~0  ; |top_square|simple_480p:display_inst|LessThan2~0  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan2~1  ; |top_square|simple_480p:display_inst|LessThan2~1  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan2~2  ; |top_square|simple_480p:display_inst|LessThan2~2  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan2~3  ; |top_square|simple_480p:display_inst|LessThan2~3  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan2~4  ; |top_square|simple_480p:display_inst|LessThan2~4  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan2~5  ; |top_square|simple_480p:display_inst|LessThan2~5  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan2~6  ; |top_square|simple_480p:display_inst|LessThan2~6  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan2~7  ; |top_square|simple_480p:display_inst|LessThan2~7  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan2~8  ; |top_square|simple_480p:display_inst|LessThan2~8  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan2~9  ; |top_square|simple_480p:display_inst|LessThan2~9  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan2~10 ; |top_square|simple_480p:display_inst|LessThan2~10 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan2~11 ; |top_square|simple_480p:display_inst|LessThan2~11 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan2~12 ; |top_square|simple_480p:display_inst|LessThan2~12 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~0  ; |top_square|simple_480p:display_inst|LessThan3~0  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~1  ; |top_square|simple_480p:display_inst|LessThan3~1  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~2  ; |top_square|simple_480p:display_inst|LessThan3~2  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~3  ; |top_square|simple_480p:display_inst|LessThan3~3  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~4  ; |top_square|simple_480p:display_inst|LessThan3~4  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~5  ; |top_square|simple_480p:display_inst|LessThan3~5  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~6  ; |top_square|simple_480p:display_inst|LessThan3~6  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~7  ; |top_square|simple_480p:display_inst|LessThan3~7  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~8  ; |top_square|simple_480p:display_inst|LessThan3~8  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~9  ; |top_square|simple_480p:display_inst|LessThan3~9  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~10 ; |top_square|simple_480p:display_inst|LessThan3~10 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~11 ; |top_square|simple_480p:display_inst|LessThan3~11 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~12 ; |top_square|simple_480p:display_inst|LessThan3~12 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~13 ; |top_square|simple_480p:display_inst|LessThan3~13 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan3~14 ; |top_square|simple_480p:display_inst|LessThan3~14 ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan4~0  ; |top_square|simple_480p:display_inst|LessThan4~0  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan4~1  ; |top_square|simple_480p:display_inst|LessThan4~1  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan4~2  ; |top_square|simple_480p:display_inst|LessThan4~2  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan5~0  ; |top_square|simple_480p:display_inst|LessThan5~0  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan5~1  ; |top_square|simple_480p:display_inst|LessThan5~1  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan5~2  ; |top_square|simple_480p:display_inst|LessThan5~2  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan5~3  ; |top_square|simple_480p:display_inst|LessThan5~3  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan5~4  ; |top_square|simple_480p:display_inst|LessThan5~4  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan5~5  ; |top_square|simple_480p:display_inst|LessThan5~5  ; out0             ;
+; |top_square|simple_480p:display_inst|LessThan5~6  ; |top_square|simple_480p:display_inst|LessThan5~6  ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~0       ; |top_square|simple_480p:display_inst|Add0~0       ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~1       ; |top_square|simple_480p:display_inst|Add0~1       ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~2       ; |top_square|simple_480p:display_inst|Add0~2       ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~3       ; |top_square|simple_480p:display_inst|Add0~3       ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~4       ; |top_square|simple_480p:display_inst|Add0~4       ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~5       ; |top_square|simple_480p:display_inst|Add0~5       ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~6       ; |top_square|simple_480p:display_inst|Add0~6       ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~7       ; |top_square|simple_480p:display_inst|Add0~7       ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~8       ; |top_square|simple_480p:display_inst|Add0~8       ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~9       ; |top_square|simple_480p:display_inst|Add0~9       ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~10      ; |top_square|simple_480p:display_inst|Add0~10      ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~11      ; |top_square|simple_480p:display_inst|Add0~11      ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~12      ; |top_square|simple_480p:display_inst|Add0~12      ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~13      ; |top_square|simple_480p:display_inst|Add0~13      ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~14      ; |top_square|simple_480p:display_inst|Add0~14      ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~15      ; |top_square|simple_480p:display_inst|Add0~15      ; out0             ;
+; |top_square|simple_480p:display_inst|Add0~16      ; |top_square|simple_480p:display_inst|Add0~16      ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~0       ; |top_square|simple_480p:display_inst|Add1~0       ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~1       ; |top_square|simple_480p:display_inst|Add1~1       ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~2       ; |top_square|simple_480p:display_inst|Add1~2       ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~3       ; |top_square|simple_480p:display_inst|Add1~3       ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~4       ; |top_square|simple_480p:display_inst|Add1~4       ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~5       ; |top_square|simple_480p:display_inst|Add1~5       ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~6       ; |top_square|simple_480p:display_inst|Add1~6       ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~7       ; |top_square|simple_480p:display_inst|Add1~7       ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~8       ; |top_square|simple_480p:display_inst|Add1~8       ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~9       ; |top_square|simple_480p:display_inst|Add1~9       ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~10      ; |top_square|simple_480p:display_inst|Add1~10      ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~11      ; |top_square|simple_480p:display_inst|Add1~11      ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~12      ; |top_square|simple_480p:display_inst|Add1~12      ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~13      ; |top_square|simple_480p:display_inst|Add1~13      ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~14      ; |top_square|simple_480p:display_inst|Add1~14      ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~15      ; |top_square|simple_480p:display_inst|Add1~15      ; out0             ;
+; |top_square|simple_480p:display_inst|Add1~16      ; |top_square|simple_480p:display_inst|Add1~16      ; out0             ;
+; |top_square|simple_480p:display_inst|Equal0~0     ; |top_square|simple_480p:display_inst|Equal0~0     ; out0             ;
+; |top_square|simple_480p:display_inst|Equal1~0     ; |top_square|simple_480p:display_inst|Equal1~0     ; out0             ;
++---------------------------------------------------+---------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------+
+; Missing 1-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------+
+; Missing 0-Value Coverage                        ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Simulator
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Oct 11 21:35:15 2022
+Info: Command: quartus_sim --simulation_results_format=VWF teste -c teste
+Info (324025): Using vector source file "C:/Users/anton/Documents/Projetos/pong-fpga/qsim_top_square.vwf"
+Info (310003): Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info (310004): Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info (310002): Simulation partitioned into 1 sub-simulations
+Info (328053): Simulation coverage is     100.00 %
+Info (328052): Number of transitions in simulation is 11903718
+Info (324045): Vector file teste.sim.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II 64-Bit Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4441 megabytes
+    Info: Processing ended: Tue Oct 11 21:35:32 2022
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:19
+
+
