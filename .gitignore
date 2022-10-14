@@ -6,3 +6,6 @@ qsim/*
 
 *.bak
 *.qws
+*.rpt
+*.done
+*.summary
