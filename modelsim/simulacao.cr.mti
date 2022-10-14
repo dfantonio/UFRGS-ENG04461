@@ -1,6 +1,0 @@
-C:/Users/anton/Documents/Projetos/pong-fpga/modelsim/clock_480p_tb.sv {0 {vcom -work work -2002 -explicit C:/Users/anton/Documents/Projetos/pong-fpga/modelsim/clock_480p_tb.sv
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
-** Error: C:/Users/anton/Documents/Projetos/pong-fpga/modelsim/clock_480p_tb.sv(1): near "/": syntax error
-
-} {4.0 5.0} {}}
