@@ -3,40 +3,39 @@ K3
 13
 cModel Technology
 Z0 dC:\Users\anton\Documents\Projetos\pong-fpga\simulation\modelsim
-vclock_480p
+vclock
 Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
-Ie79;8MAmPEOV<Q<91g3GX0
-V_Aa=J=db?4nD<5]b40Y6I2
-Z2 !s105 clock_480p_sv_unit
+IdM=:ITRC;X<[:fO2>OeIg1
+VWZ7[6QKcCIQFcjNOYLR:Z2
+Z2 !s105 clock_sv_unit
 S1
 Z3 dC:\Users\anton\Documents\Projetos\pong-fpga\simulation\modelsim
-Z4 w1665605542
-Z5 8C:/Users/anton/Documents/Projetos/pong-fpga/clock_480p.sv
-Z6 FC:/Users/anton/Documents/Projetos/pong-fpga/clock_480p.sv
+Z4 w1665669897
+Z5 8C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
+Z6 FC:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
 L0 5
 Z7 OV;L;10.1d;51
 r1
 31
-Z8 !s108 1665625262.593000
-Z9 !s107 C:/Users/anton/Documents/Projetos/pong-fpga/clock_480p.sv|
-Z10 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anton/Documents/Projetos/pong-fpga|-O0|C:/Users/anton/Documents/Projetos/pong-fpga/clock_480p.sv|
-Z11 o-sv -work work -O0
-Z12 !s92 -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0
+Z8 !s108 1665673953.913000
+Z9 !s107 C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv|
+Z10 !s90 -reportprogress|300|-work|work|C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv|
+Z11 o-work work -O0
 !i10b 1
-!s100 2@=kPD`MYWVa>2^bFCa881
+!s100 VTdE6k6ThaO53zm2;bfdC1
 !s85 0
 !s101 -O0
-vclock_480p_tb
+vclock_tb
 R1
-IXZAJ`Qf[KaL8]H_kN8cM33
-Vj77UT]4l_kY>J7J8QcZV11
+IN_VSf?BEeg4d`nBS0=Z9X3
+VA=aI=_bL:oZl<]V_@OAgd0
 R2
 S1
 R3
 R4
 R5
 R6
-L0 24
+L0 22
 R7
 r1
 31
@@ -44,100 +43,95 @@ R8
 R9
 R10
 R11
-R12
 !i10b 1
-!s100 0R`FBP_]RzK6gKZP2Kc072
+!s100 cWEk_=z7Z:iD6YDEX]VfG1
 !s85 0
 !s101 -O0
-vsimple_480p
+vcontrole_geral
 R1
-I24jfh5TVzF^1Keb7mPG7`1
-VaJ^019d@j?TKbM@5f>ea03
-Z13 !s105 simple_480p_sv_unit
+Il_MOY^UE>eS0LK1V2o6_^2
+VP1MM>8jOQXTma1XAPz7]h1
+Z12 !s105 controle_geral_sv_unit
 S1
 R3
-Z14 w1665611278
-Z15 8C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv
-Z16 FC:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv
+Z13 w1665673908
+Z14 8C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+Z15 FC:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
 L0 4
 R7
 r1
 31
-Z17 !s108 1665625262.747000
-Z18 !s107 C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv|
-Z19 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anton/Documents/Projetos/pong-fpga|-O0|C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv|
+Z16 !s108 1665673953.973000
+Z17 !s107 C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv|
+Z18 !s90 -reportprogress|300|-work|work|C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv|
 R11
-R12
 !i10b 1
-!s100 LMR;SN`P6;MUR1hancdLI0
+!s100 ]^f4QQ7YHb6Y[PHkaia?F1
 !s85 0
 !s101 -O0
-vsimple_480p_tb
+vcontrole_geral_tb
 R1
-IJSLUe140>;SoeIAeDQ<L<1
-VQ;ebPDJC:7R]10bj9J3=K2
-R13
+I84SQWb0?^Q;hfWN8?8SHh0
+Va1=?bH4Q71>]_T706DDzD2
+R12
 S1
 R3
+R13
 R14
 R15
+L0 87
+R7
+r1
+31
 R16
+R17
+R18
+R11
+!i10b 1
+!s100 10kz=R^j>kSTkL_E>=AK93
+!s85 0
+!s101 -O0
+vvga
+R1
+!i10b 1
+!s100 hBN81CHP5NUV<=cViZ?Uh0
+IT_TW_cTGzTd90[_`n:aYz3
+V5bHRX9:klDI[U1<R:OkbT3
+Z19 !s105 vga_sv_unit
+S1
+R3
+Z20 w1665663364
+Z21 8C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv
+Z22 FC:/Users/anton/Documents/Projetos/pong-fpga/vga.sv
+L0 4
+R7
+r1
+!s85 0
+31
+Z23 !s108 1665673954.039000
+Z24 !s107 C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv|
+Z25 !s90 -reportprogress|300|-work|work|C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv|
+!s101 -O0
+R11
+vvga_tb
+R1
+!i10b 1
+!s100 >a4I]=<]NJZ1Gc5<lC72S2
+I0I37z7?2f;_9RCajSEDGV0
+VfG2QZ5iWiafRkkFYY0bbI0
+R19
+S1
+R3
+R20
+R21
+R22
 L0 47
 R7
 r1
-31
-R17
-R18
-R19
-R11
-R12
-!i10b 1
-!s100 8Z^8a3:EbKDIJ8f3O;M[z1
-!s85 0
-!s101 -O0
-vtop_square
-R1
-!i10b 1
-!s100 IcaT0zMA27hD><f:_]4ZY1
-I2g:z3DK?g:A[I:fO]PfjY0
-VCkaQYF@kojS>1<zBF?agF3
-Z20 !s105 top_square_sv_unit
-S1
-R3
-Z21 w1665624964
-Z22 8C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv
-Z23 FC:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv
-L0 8
-R7
-r1
 !s85 0
 31
-Z24 !s108 1665625262.910000
-Z25 !s107 C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv|
-Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/anton/Documents/Projetos/pong-fpga|-O0|C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv|
-!s101 -O0
-R11
-R12
-vtop_square_tb
-R1
-!i10b 1
-!s100 `Ma_iSDf4z9d@WodZBHSQ0
-IBeXZaOjOH2FB60C>F]Mh<2
-VPXB8eB@T`ekC>]8D>l9`c3
-R20
-S1
-R3
-R21
-R22
 R23
-L0 75
-R7
-r1
-!s85 0
-31
 R24
 R25
-R26
 !s101 -O0
 R11
-R12

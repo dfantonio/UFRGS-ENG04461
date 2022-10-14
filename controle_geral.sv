@@ -7,7 +7,9 @@ module controle_geral (
   output     logic vga_vsync,    // VGA vertical sync
   output     logic [9:0] vga_r,  // 10-bit VGA red
   output     logic [9:0] vga_g,  // 10-bit VGA green
-  output     logic [9:0] vga_b   // 10-bit VGA blue
+  output     logic [9:0] vga_b,  // 10-bit VGA blue
+  output     logic clock_25M,    // Clock para o VGA
+  output     logic vga_blank     // VGA DAC blank pin
 );
 
   logic clock_saida;
@@ -31,13 +33,18 @@ module controle_geral (
     de
   );
 
-// Acho que pode remover isso
   initial begin
     vga_r = 10'h0;
     vga_g = 10'h0;
     vga_b = 10'h0;
     vga_hsync = 1'b1;
     vga_vsync = 1'b1;
+    vga_blank = 1'b1;
+  end
+
+  // Add the 25 MHz to the clock_25M pin
+  always_comb begin
+    clock_25M = clock_saida;
   end
 
   // define a square with screen coordinates
@@ -47,7 +54,7 @@ module controle_geral (
   end
 
   // paint colours: white inside square, blue outside
-  logic [9:0] paint_r = 10'h0, paint_g = 10'h0, paint_b = 10'h0;
+  logic [9:0] paint_r, paint_g, paint_b;
   always_comb begin
       paint_r = (square) ? 10'hFFF : 10'h111;
       paint_g = (square) ? 10'hFFF : 10'h333;
@@ -61,12 +68,9 @@ module controle_geral (
 	  
     // Faz o sinal ter 8 bits
       if (de) begin
-          // vga_r <= paint_r;
-          // vga_g <= paint_g;
-          // vga_b <= paint_b;
-          vga_r <= 10'd512;
-          vga_g <= 10'd512;
-          vga_b <= 10'd512;
+          vga_r <= paint_r;
+          vga_g <= paint_g;
+          vga_b <= paint_b;
       end else begin  // VGA colour should be black in blanking interval
           vga_r <= 10'h0;
           vga_g <= 10'h0;
@@ -82,9 +86,10 @@ module controle_geral_tb;
   wire [9:0] vga_r;
   wire [9:0] vga_g;
   wire [9:0] vga_b;
+  wire clock_25M, vga_blank;
 
 	parameter stimDelay = 1;
-  controle_geral teste_instancia (clk, vga_hsync, vga_vsync, vga_r, vga_g, vga_b);
+  controle_geral teste_instancia (clk, vga_hsync, vga_vsync, vga_r, vga_g, vga_b, clock_25M, vga_blank);
 
   initial begin
     clk=0;

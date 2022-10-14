@@ -10,129 +10,599 @@
 # ** Warning: Copied D:\Programas\Altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga {C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv}
+# vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga {C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module simple_480p
-# -- Compiling module simple_480p_tb
+# -- Compiling module vga
+# -- Compiling module vga_tb
 # 
 # Top level modules:
-# 	simple_480p_tb
-# vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga {C:/Users/anton/Documents/Projetos/pong-fpga/clock_480p.sv}
+# 	vga_tb
+# vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga {C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module clock_480p
-# -- Compiling module clock_480p_tb
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
 # 
 # Top level modules:
-# 	clock_480p_tb
-# vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga {C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv}
+# 	controle_geral_tb
+# vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga {C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module top_square
-# -- Compiling module top_square_tb
+# -- Compiling module clock
+# -- Compiling module clock_tb
 # 
 # Top level modules:
-# 	top_square_tb
+# 	clock_tb
 # 
-vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/clock_480p.sv
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module clock_480p
-# -- Compiling module clock_480p_tb
+# -- Compiling module clock
+# -- Compiling module clock_tb
 # 
 # Top level modules:
-# 	clock_480p_tb
-vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/clock_480p.sv
+# 	clock_tb
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module clock_480p
-# -- Compiling module clock_480p_tb
+# -- Compiling module clock
+# -- Compiling module clock_tb
 # 
 # Top level modules:
-# 	clock_480p_tb
-vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv
+# 	clock_tb
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module simple_480p
-# -- Compiling module simple_480p_tb
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
 # 
 # Top level modules:
-# 	simple_480p_tb
-vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv
+# 	controle_geral_tb
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module simple_480p
-# -- Compiling module simple_480p_tb
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
 # 
 # Top level modules:
-# 	simple_480p_tb
-vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv
+# 	controle_geral_tb
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module top_square
-# -- Compiling module top_square_tb
+# -- Compiling module vga
+# -- Compiling module vga_tb
 # 
 # Top level modules:
-# 	top_square_tb
-vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv
+# 	vga_tb
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module top_square
-# -- Compiling module top_square_tb
+# -- Compiling module vga
+# -- Compiling module vga_tb
 # 
 # Top level modules:
-# 	top_square_tb
-vsim -voptargs=+acc work.top_square_tb
-# vsim -voptargs=+acc work.top_square_tb 
+# 	vga_tb
+vsim -voptargs=+acc work.controle_geral_tb
+# vsim -voptargs=+acc work.controle_geral_tb 
 # Loading sv_std.std
-# Loading work.top_square_tb
-# Loading work.top_square
-# Loading work.clock_480p
-# Loading work.simple_480p
-# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv(40): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv(6).
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+# ** Warning: (vsim-3017) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(72): [TFMPC] - Too few port connections. Expected 6, found 3.
 # 
-#         Region: /top_square_tb/gerador_vga/display_inst
-add wave -position insertpoint  \
-sim:/top_square_tb/vga_vsync
+#         Region: /controle_geral_tb/teste_instancia
+# ** Warning: (vsim-3722) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(72): [TFMPC] - Missing connection for port 'vga_r'.
+# 
+# ** Warning: (vsim-3722) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(72): [TFMPC] - Missing connection for port 'vga_g'.
+# 
+# ** Warning: (vsim-3722) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(72): [TFMPC] - Missing connection for port 'vga_b'.
+# 
+# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(19): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'rst'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv(7).
+# 
+#         Region: /controle_geral_tb/teste_instancia/instancia_clock
+# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(32): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv(6).
+# 
+#         Region: /controle_geral_tb/teste_instancia/instancia_vga
+add wave -position insertpoint sim:/controle_geral_tb/teste_instancia/*
 run
-add wave -position insertpoint  \
-sim:/top_square_tb/gerador_vga/display_inst/clk \
-sim:/top_square_tb/gerador_vga/display_inst/reset \
-sim:/top_square_tb/gerador_vga/display_inst/sx \
-sim:/top_square_tb/gerador_vga/display_inst/sy \
-sim:/top_square_tb/gerador_vga/display_inst/hsync \
-sim:/top_square_tb/gerador_vga/display_inst/vsync \
-sim:/top_square_tb/gerador_vga/display_inst/de
+run
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+# ** Warning: (vsim-3017) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(72): [TFMPC] - Too few port connections. Expected 6, found 3.
+# 
+#         Region: /controle_geral_tb/teste_instancia
+# ** Warning: (vsim-3722) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(72): [TFMPC] - Missing connection for port 'vga_r'.
+# 
+# ** Warning: (vsim-3722) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(72): [TFMPC] - Missing connection for port 'vga_g'.
+# 
+# ** Warning: (vsim-3722) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(72): [TFMPC] - Missing connection for port 'vga_b'.
+# 
+# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(19): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'rst'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv(7).
+# 
+#         Region: /controle_geral_tb/teste_instancia/instancia_clock
+# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(32): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv(6).
+# 
+#         Region: /controle_geral_tb/teste_instancia/instancia_vga
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+# ** Warning: (vsim-3017) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(72): [TFMPC] - Too few port connections. Expected 6, found 3.
+# 
+#         Region: /controle_geral_tb/teste_instancia
+# ** Warning: (vsim-3722) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(72): [TFMPC] - Missing connection for port 'vga_r'.
+# 
+# ** Warning: (vsim-3722) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(72): [TFMPC] - Missing connection for port 'vga_g'.
+# 
+# ** Warning: (vsim-3722) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(72): [TFMPC] - Missing connection for port 'vga_b'.
+# 
+# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(19): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'rst'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv(7).
+# 
+#         Region: /controle_geral_tb/teste_instancia/instancia_clock
+# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(32): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv(6).
+# 
+#         Region: /controle_geral_tb/teste_instancia/instancia_vga
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+# A time value could not be extracted from the current line
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(19): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'rst'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv(7).
+# 
+#         Region: /controle_geral_tb/teste_instancia/instancia_clock
+# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(32): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv(6).
+# 
+#         Region: /controle_geral_tb/teste_instancia/instancia_vga
+# Error opening C:/Users/anton/Documents/Projetos/pong-fpga/simulation/modelsim/[PCDPC] - Port size (1 or 1) does not match connection size 
+# Path name 'C:/Users/anton/Documents/Projetos/pong-fpga/simulation/modelsim/[PCDPC] - Port size (1 or 1) does not match connection size ' doesn't exist.
+# A time value could not be extracted from the current line
+run
+# Error opening C:/Users/anton/Documents/Projetos/pong-fpga/simulation/modelsim/[PCDPC] - Port size (1 or 1) does not match connection size 
+# Path name 'C:/Users/anton/Documents/Projetos/pong-fpga/simulation/modelsim/[PCDPC] - Port size (1 or 1) does not match connection size ' doesn't exist.
+# A time value could not be extracted from the current line
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(19): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'rst'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv(7).
+# 
+#         Region: /controle_geral_tb/teste_instancia/instancia_clock
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
 run
 quit -sim
-vsim -voptargs=+acc work.top_square
-# vsim -voptargs=+acc work.top_square 
-# Loading sv_std.std
-# Loading work.top_square
-# Loading work.clock_480p
-# Loading work.simple_480p
-# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv(40): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv(6).
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock
+# -- Compiling module clock_tb
 # 
-#         Region: /top_square/display_inst
+# Top level modules:
+# 	clock_tb
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock
+# -- Compiling module clock_tb
+# 
+# Top level modules:
+# 	clock_tb
+vlog -work work -O0 C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+vlog -work work -O0 C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga
+# -- Compiling module vga_tb
+# 
+# Top level modules:
+# 	vga_tb
+vlog -sv -work work +incdir+C:/Users/anton/Documents/Projetos/pong-fpga -O0 C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga
+# -- Compiling module vga_tb
+# 
+# Top level modules:
+# 	vga_tb
+vsim -voptargs=+acc work.controle_geral_tb
+# vsim -voptargs=+acc work.controle_geral_tb 
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+add wave -position insertpoint sim:/controle_geral_tb/teste_instancia/*
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock
+# -- Compiling module clock_tb
+# 
+# Top level modules:
+# 	clock_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga
+# -- Compiling module vga_tb
+# 
+# Top level modules:
+# 	vga_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock
+# -- Compiling module clock_tb
+# 
+# Top level modules:
+# 	clock_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock
+# -- Compiling module clock_tb
+# 
+# Top level modules:
+# 	clock_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock
+# -- Compiling module clock_tb
+# 
+# Top level modules:
+# 	clock_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga
+# -- Compiling module vga_tb
+# 
+# Top level modules:
+# 	vga_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+run
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock
+# -- Compiling module clock_tb
+# 
+# Top level modules:
+# 	clock_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga
+# -- Compiling module vga_tb
+# 
+# Top level modules:
+# 	vga_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+run
+run
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock
+# -- Compiling module clock_tb
+# 
+# Top level modules:
+# 	clock_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga
+# -- Compiling module vga_tb
+# 
+# Top level modules:
+# 	vga_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock
+# -- Compiling module clock_tb
+# 
+# Top level modules:
+# 	clock_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga
+# -- Compiling module vga_tb
+# 
+# Top level modules:
+# 	vga_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
 add wave -position insertpoint  \
-sim:/top_square/display_inst/clk \
-sim:/top_square/display_inst/reset \
-sim:/top_square/display_inst/sx \
-sim:/top_square/display_inst/sy \
-sim:/top_square/display_inst/hsync \
-sim:/top_square/display_inst/vsync \
-sim:/top_square/display_inst/de
+sim:/controle_geral_tb/vga_blank
+add wave -position insertpoint  \
+sim:/controle_geral_tb/clock_25M
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock
+# -- Compiling module clock_tb
+# 
+# Top level modules:
+# 	clock_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga
+# -- Compiling module vga_tb
+# 
+# Top level modules:
+# 	vga_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+run
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# ** Error: (vlog-7033) C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(69): Variable 'clock_25M' driven in a combinational block, may not be driven by any other process. See C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv(48).
+# 
+# -- Compiling module controle_geral_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
 run
 # Break key hit 
-quit -sim
-vsim -voptargs=+acc work.top_square_tb
-# vsim -voptargs=+acc work.top_square_tb 
-# Loading sv_std.std
-# Loading work.top_square_tb
-# Loading work.top_square
-# Loading work.clock_480p
-# Loading work.simple_480p
-# ** Warning: (vsim-3015) C:/Users/anton/Documents/Projetos/pong-fpga/top_square.sv(40): [PCDPC] - Port size (1 or 1) does not match connection size (32) for port 'reset'. The port definition is at: C:/Users/anton/Documents/Projetos/pong-fpga/simple_480p.sv(6).
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/clock.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module clock
+# -- Compiling module clock_tb
 # 
-#         Region: /top_square_tb/gerador_vga/display_inst
-add wave -position insertpoint  \
-sim:/top_square_tb/gerador_vga/display_inst/clk \
-sim:/top_square_tb/gerador_vga/display_inst/reset \
-sim:/top_square_tb/gerador_vga/display_inst/sx \
-sim:/top_square_tb/gerador_vga/display_inst/sy \
-sim:/top_square_tb/gerador_vga/display_inst/hsync \
-sim:/top_square_tb/gerador_vga/display_inst/vsync \
-sim:/top_square_tb/gerador_vga/display_inst/de
+# Top level modules:
+# 	clock_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/controle_geral.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module controle_geral
+# -- Compiling module controle_geral_tb
+# 
+# Top level modules:
+# 	controle_geral_tb
+vlog -reportprogress 300 -work work C:/Users/anton/Documents/Projetos/pong-fpga/vga.sv
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module vga
+# -- Compiling module vga_tb
+# 
+# Top level modules:
+# 	vga_tb
+restart -f
+# Loading sv_std.std
+# Loading work.controle_geral_tb
+# Loading work.controle_geral
+# Loading work.clock
+# Loading work.vga
+run
+run
 run
