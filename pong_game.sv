@@ -17,6 +17,7 @@ module pong_game (
   parameter PADDLE_WIDTH = 10;
   parameter BORDER_WIDTH = 7;
   parameter BALL_SIZE = 7;  // Has to be and odd number
+  parameter BALL_SPEED = 3;
   parameter BORDER_OFFSET = 5;
 
   parameter COLOR_WHITE = 10'd1023;
@@ -57,6 +58,18 @@ module pong_game (
       .draw_paddle  (draw_paddle_right)
   );
 
+  logic draw_number;
+  logic [3:0] TEMP_number_counter = 9;
+  number_gen inst_number_gen_left (
+      .clk(clock_25M),
+      .sx(sx),
+      .sy(sy),
+      .number_x(100),
+      .number_y(100),
+      .number(TEMP_number_counter),
+      .draw_number(draw_number)
+  );
+
   // Ball variables
   logic draw_ball;
   logic [9:0] ball_x, ball_y;
@@ -90,7 +103,7 @@ module pong_game (
     draw_y = (sy - ball_y) >= 0 && (sy - ball_y) < BALL_SIZE;
     draw_ball = draw_x && draw_y;
 
-    if (enable_paddle_left || enable_paddle_right || draw_ball) begin
+    if (enable_paddle_left || enable_paddle_right || draw_ball || draw_number) begin
       paint_r = COLOR_WHITE;
       paint_g = COLOR_WHITE;
       paint_b = COLOR_WHITE;
@@ -118,11 +131,11 @@ module pong_game (
 
     // Update the ball position once per frame
     if (frame) begin
-      if (ball_dx) ball_x = ball_x + 1;
-      else ball_x = ball_x - 1;
+      if (ball_dx) ball_x = ball_x + BALL_SPEED;
+      else ball_x = ball_x - BALL_SPEED;
 
-      if (ball_dy) ball_y = ball_y - 1;
-      else ball_y = ball_y + 1;
+      if (ball_dy) ball_y = ball_y - BALL_SPEED;
+      else ball_y = ball_y + BALL_SPEED;
     end
 
     if (ball_dy == 1 && (ball_y < BORDER_OFFSET))
@@ -130,10 +143,12 @@ module pong_game (
     if (ball_dy == 0 && (ball_y > (SCREEN_HEIGHT - BORDER_OFFSET)))
       ball_dy = 1;  // If ball is moving down, should move up
 
-    //TODO: Modificar para só refletir caso tenha a colisão com algum paddle
-
     if (enable_paddle_left && draw_ball) ball_dx = 1;
-    if (enable_paddle_right && draw_ball) ball_dx = 0;
+    if (enable_paddle_right && draw_ball) begin
+      ball_dx = 0;
+      TEMP_number_counter = TEMP_number_counter + 1;
+      // if (TEMP_number_counter > 5) TEMP_number_counter = 0;
+    end
 
     //TODO: Mover o paddle com o controle
     pad_left_position  = ball_y;
