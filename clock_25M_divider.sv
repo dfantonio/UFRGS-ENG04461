@@ -1,7 +1,7 @@
 `default_nettype none `timescale 1ns / 1ps
 
 // Receive 50 MHz clock and output a 25 MHz clock
-module clock_25M (
+module clock_25M_divider (
     input  wire logic clk_50m,  // input clock (500 MHz)
     input  wire logic rst,      // reset
     output logic      clk_out   // pixel clock
@@ -16,13 +16,13 @@ module clock_25M (
 endmodule
 
 
-module clock_25M_tb;
+module clock_25M_divider_tb;
   reg clk_50m, reset;
   wire clk_out;
 
   parameter stimDelay = 1;
 
-  clock_25M instancia_divisor (
+  clock_25M_divider instancia_divisor (
       clk_50m,
       reset,
       clk_out
