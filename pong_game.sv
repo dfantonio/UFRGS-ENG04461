@@ -13,6 +13,7 @@ module pong_game (
   parameter SCREEN_WIDTH = 640;
   parameter SCREEN_HEIGHT = 480;
   parameter PADDLE_HORIZONTAL_OFFSET = 20;
+  parameter PADDLE_HEIGHT = 100;
   parameter PADDLE_WIDTH = 10;
   parameter BORDER_WIDTH = 7;
   parameter BALL_SIZE = 7;  // Has to be and odd number
@@ -41,16 +42,18 @@ module pong_game (
   );
 
   logic draw_paddle_left;
+  logic [9:0] pad_left_position;
   paddle inst_paddle_left (
       .sy,
-      .pad_top_pixel(100),
+      .pad_top_pixel(pad_left_position),
       .draw_paddle  (draw_paddle_left)
   );
 
   logic draw_paddle_right;
+  logic [9:0] pad_right_position;
   paddle inst_paddle_right (
       .sy,
-      .pad_top_pixel(100),
+      .pad_top_pixel(pad_right_position),
       .draw_paddle  (draw_paddle_right)
   );
 
@@ -71,6 +74,8 @@ module pong_game (
     vga_blank = 1'b1;
     ball_dy = 1;
     ball_dx = 1;
+    pad_left_position = 0;
+    pad_right_position = 0;
   end
 
   // paint colours: white inside square, blue outside
@@ -126,8 +131,19 @@ module pong_game (
       ball_dy = 1;  // If ball is moving down, should move up
 
     //TODO: Modificar para só refletir caso tenha a colisão com algum paddle
-    if (ball_dx == 1 && (ball_x > 635)) ball_dx = 0;  // Ball bounce on right side
-    if (ball_dx == 0 && (ball_x < 5)) ball_dx = 1;  // Ball bounce on left side
+
+    if (enable_paddle_left && draw_ball) ball_dx = 1;
+    if (enable_paddle_right && draw_ball) ball_dx = 0;
+
+    //TODO: Mover o paddle com o controle
+    pad_left_position  = ball_y;
+    pad_right_position = ball_y;
+
+    if (pad_left_position > (SCREEN_HEIGHT - PADDLE_HEIGHT))
+      pad_left_position = SCREEN_HEIGHT - PADDLE_HEIGHT;
+    if (pad_right_position > (SCREEN_HEIGHT - PADDLE_HEIGHT))
+      pad_right_position = SCREEN_HEIGHT - PADDLE_HEIGHT;
+
   end
 endmodule
 
