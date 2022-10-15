@@ -2,7 +2,7 @@
 
 // Receive 50 MHz clock and output a 25 MHz clock
 module clock_25M_divider (
-    input  wire logic clk_50m,  // input clock (500 MHz)
+    input  wire logic clk_50m,  // input clock (50 MHz)
     input  wire logic rst,      // reset
     output logic      clk_out   // pixel clock
 );

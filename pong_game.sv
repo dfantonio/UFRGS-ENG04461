@@ -23,6 +23,8 @@ module pong_game (
   parameter COLOR_WHITE = 10'd1023;
   parameter COLOR_BLACK = 10'd0;
 
+  logic [3:0] score_left = 0, score_right = 0;
+
   clock_25M_divider inst_clock_25M (
       clock_50M,
       1'b0,
@@ -58,16 +60,24 @@ module pong_game (
       .draw_paddle  (draw_paddle_right)
   );
 
-  logic draw_number;
-  logic [3:0] TEMP_number_counter = 9;
+  logic draw_number_left, draw_number_right;
   number_gen inst_number_gen_left (
       .clk(clock_25M),
       .sx(sx),
       .sy(sy),
-      .number_x(100),
-      .number_y(100),
-      .number(TEMP_number_counter),
-      .draw_number(draw_number)
+      .number_x(300),
+      .number_y(50),
+      .number(score_left),
+      .draw_number(draw_number_left)
+  );
+  number_gen inst_number_gen_right (
+      .clk(clock_25M),
+      .sx(sx),
+      .sy(sy),
+      .number_x(340),
+      .number_y(50),
+      .number(score_right),
+      .draw_number(draw_number_right)
   );
 
   // Ball variables
@@ -89,6 +99,8 @@ module pong_game (
     ball_dx = 1;
     pad_left_position = 0;
     pad_right_position = 0;
+    ball_x = 320;
+    ball_y = 240;
   end
 
   // paint colours: white inside square, blue outside
@@ -103,7 +115,7 @@ module pong_game (
     draw_y = (sy - ball_y) >= 0 && (sy - ball_y) < BALL_SIZE;
     draw_ball = draw_x && draw_y;
 
-    if (enable_paddle_left || enable_paddle_right || draw_ball || draw_number) begin
+    if (enable_paddle_left || enable_paddle_right || draw_ball || draw_number_left || draw_number_right) begin
       paint_r = COLOR_WHITE;
       paint_g = COLOR_WHITE;
       paint_b = COLOR_WHITE;
@@ -144,15 +156,32 @@ module pong_game (
       ball_dy = 1;  // If ball is moving down, should move up
 
     if (enable_paddle_left && draw_ball) ball_dx = 1;
-    if (enable_paddle_right && draw_ball) begin
-      ball_dx = 0;
-      TEMP_number_counter = TEMP_number_counter + 1;
-      // if (TEMP_number_counter > 5) TEMP_number_counter = 0;
+    if (enable_paddle_right && draw_ball) ball_dx = 0;
+
+
+    // Detect a point
+    if (ball_x > SCREEN_WIDTH) begin
+      // Reset ball position
+      ball_x = 320;
+      ball_y = 240;
+
+      score_left = score_left + 1;  // Increase the score
+      if (score_left > 9) score_left = 0;
+    end
+
+    // Detect a point
+    if (ball_x < 5) begin
+      // Reset ball position
+      ball_x = 320;
+      ball_y = 240;
+
+      score_right = score_right + 1;  // Increase the score
+      if (score_right > 9) score_right = 0;
     end
 
     //TODO: Mover o paddle com o controle
-    pad_left_position  = ball_y;
-    pad_right_position = ball_y;
+    // pad_left_position = ball_y;
+    // pad_right_position = ball_y;
 
     if (pad_left_position > (SCREEN_HEIGHT - PADDLE_HEIGHT))
       pad_left_position = SCREEN_HEIGHT - PADDLE_HEIGHT;
