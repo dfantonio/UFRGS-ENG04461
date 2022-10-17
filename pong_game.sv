@@ -10,14 +10,14 @@ module pong_game (
     output logic            clock_25M,  // 25 MHz clock for the VGA DAC
     output logic            vga_blank   // VGA DAC blank pin
 );
-  parameter SCREEN_WIDTH = 640;
-  parameter SCREEN_HEIGHT = 480;
+  parameter SCREEN_WIDTH = 10'd640;
+  parameter SCREEN_HEIGHT = 10'd480;
   parameter PADDLE_HORIZONTAL_OFFSET = 20;
-  parameter PADDLE_HEIGHT = 100;
+  parameter PADDLE_HEIGHT = 10'd100;
   parameter PADDLE_WIDTH = 10;
   parameter BORDER_WIDTH = 7;
   parameter BALL_SIZE = 7;  // Has to be and odd number
-  parameter BALL_SPEED = 3;
+  parameter BALL_SPEED = 5'd3;
   parameter BORDER_OFFSET = 5;
 
   parameter COLOR_WHITE = 10'd1023;
@@ -165,7 +165,7 @@ module pong_game (
       ball_x = 320;
       ball_y = 240;
 
-      score_left = score_left + 1;  // Increase the score
+      score_left = score_left + 1'd1;  // Increase the score
       if (score_left > 9) score_left = 0;
     end
 
@@ -175,7 +175,7 @@ module pong_game (
       ball_x = 320;
       ball_y = 240;
 
-      score_right = score_right + 1;  // Increase the score
+      score_right = score_right + 1'd1;  // Increase the score
       if (score_right > 9) score_right = 0;
     end
 

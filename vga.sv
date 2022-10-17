@@ -32,9 +32,9 @@ module vga (
   always_ff @(posedge clk) begin
     if (sx == LINE) begin  // last pixel on line?
       sx <= 0;
-      sy <= (sy == SCREEN) ? 0 : sy + 1;  // last line on screen?
+      sy <= (sy == SCREEN) ? 0 : sy + 1'd1;  // last line on screen?
     end else begin
-      sx <= sx + 1;
+      sx <= sx + 1'd1;
     end
     if (reset) begin
       sx <= 0;
