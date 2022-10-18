@@ -2,6 +2,7 @@
 
 module pong_game (
     input  wire logic       clock_50M,
+    input  wire logic       rx_rs_232,
     output logic            vga_hsync,  // VGA horizontal sync
     output logic            vga_vsync,  // VGA vertical sync
     output logic      [9:0] vga_r,      // 10-bit VGA red
@@ -79,6 +80,31 @@ module pong_game (
       .number(score_right),
       .draw_number(draw_number_right)
   );
+
+  logic data_ready;
+  logic [7:0] serial_data;
+  async_receiver inst_receiver_rs232 (
+      .clk(clock_25M),
+      .RxD(rx_rs_232),
+      .RxD_data_ready(data_ready),
+      .RxD_data(serial_data)
+  );
+
+  logic [6:0] pad_left_serial, pad_right_serial;
+  uart_pong inst_serial_interpreter (
+      .clk(clock_50M),
+      .rxReady(data_ready),
+      .rxData(serial_data),
+      .paddle1Y(pad_left_serial),
+      .paddle2Y(pad_right_serial),
+  );
+  // leitor_serial inst_serial_interpreter (
+  //     .clk(clock_50M),
+  //     .rxReady(data_ready),
+  //     .rxData(serial_data),
+  //     .paddle1Y(pad_left_serial),
+  //     .paddle2Y(pad_right_serial),
+  // );
 
   // Ball variables
   logic draw_ball;
@@ -179,9 +205,8 @@ module pong_game (
       if (score_right > 9) score_right = 0;
     end
 
-    //TODO: Mover o paddle com o controle
-    // pad_left_position = ball_y;
-    // pad_right_position = ball_y;
+    pad_left_position  = pad_left_serial * 3;
+    pad_right_position = pad_right_serial * 3;
 
     if (pad_left_position > (SCREEN_HEIGHT - PADDLE_HEIGHT))
       pad_left_position = SCREEN_HEIGHT - PADDLE_HEIGHT;
