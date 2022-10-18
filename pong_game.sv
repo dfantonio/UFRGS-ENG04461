@@ -2,14 +2,17 @@
 
 module pong_game (
     input  wire logic       clock_50M,
-    input  wire logic       rx_rs_232,
-    output logic            vga_hsync,  // VGA horizontal sync
-    output logic            vga_vsync,  // VGA vertical sync
-    output logic      [9:0] vga_r,      // 10-bit VGA red
-    output logic      [9:0] vga_g,      // 10-bit VGA green
-    output logic      [9:0] vga_b,      // 10-bit VGA blue
-    output logic            clock_25M,  // 25 MHz clock for the VGA DAC
-    output logic            vga_blank   // VGA DAC blank pin
+    input  wire logic       btn_up_left,     // Pad control input
+    input  wire logic       btn_down_left,   // Pad control input
+    input  wire logic       btn_up_right,    // Pad control input
+    input  wire logic       btn_down_right,  // Pad control input
+    output logic            vga_hsync,       // VGA horizontal sync
+    output logic            vga_vsync,       // VGA vertical sync
+    output logic      [9:0] vga_r,           // 10-bit VGA red
+    output logic      [9:0] vga_g,           // 10-bit VGA green
+    output logic      [9:0] vga_b,           // 10-bit VGA blue
+    output logic            clock_25M,       // 25 MHz clock for the VGA DAC
+    output logic            vga_blank        // VGA DAC blank pin
 );
   parameter SCREEN_WIDTH = 10'd640;
   parameter SCREEN_HEIGHT = 10'd480;
@@ -19,6 +22,7 @@ module pong_game (
   parameter BORDER_WIDTH = 7;
   parameter BALL_SIZE = 7;  // Has to be and odd number
   parameter BALL_SPEED = 5'd3;
+  parameter PADDLE_SPEED = 5'd2;
   parameter BORDER_OFFSET = 5;
 
   parameter COLOR_WHITE = 10'd1023;
@@ -80,31 +84,6 @@ module pong_game (
       .number(score_right),
       .draw_number(draw_number_right)
   );
-
-  logic data_ready;
-  logic [7:0] serial_data;
-  async_receiver inst_receiver_rs232 (
-      .clk(clock_25M),
-      .RxD(rx_rs_232),
-      .RxD_data_ready(data_ready),
-      .RxD_data(serial_data)
-  );
-
-  logic [6:0] pad_left_serial, pad_right_serial;
-  uart_pong inst_serial_interpreter (
-      .clk(clock_50M),
-      .rxReady(data_ready),
-      .rxData(serial_data),
-      .paddle1Y(pad_left_serial),
-      .paddle2Y(pad_right_serial),
-  );
-  // leitor_serial inst_serial_interpreter (
-  //     .clk(clock_50M),
-  //     .rxReady(data_ready),
-  //     .rxData(serial_data),
-  //     .paddle1Y(pad_left_serial),
-  //     .paddle2Y(pad_right_serial),
-  // );
 
   // Ball variables
   logic draw_ball;
@@ -169,11 +148,24 @@ module pong_game (
 
     // Update the ball position once per frame
     if (frame) begin
+      // Update ball X position
       if (ball_dx) ball_x = ball_x + BALL_SPEED;
       else ball_x = ball_x - BALL_SPEED;
 
+      // Update ball Y position
       if (ball_dy) ball_y = ball_y - BALL_SPEED;
       else ball_y = ball_y + BALL_SPEED;
+
+      // Update left paddle position
+      if (btn_up_left && pad_right_position > 5)
+        pad_left_position = pad_left_position - PADDLE_SPEED;
+      if (btn_down_left) pad_left_position = pad_left_position + PADDLE_SPEED;
+
+      // Update right paddle position
+      if (btn_up_right && pad_right_position > 5)
+        pad_right_position = pad_right_position - PADDLE_SPEED;
+      if (btn_down_right) pad_right_position = pad_right_position + PADDLE_SPEED;
+
     end
 
     if (ball_dy == 1 && (ball_y < BORDER_OFFSET))
@@ -204,9 +196,6 @@ module pong_game (
       score_right = score_right + 1'd1;  // Increase the score
       if (score_right > 9) score_right = 0;
     end
-
-    pad_left_position  = pad_left_serial * 3;
-    pad_right_position = pad_right_serial * 3;
 
     if (pad_left_position > (SCREEN_HEIGHT - PADDLE_HEIGHT))
       pad_left_position = SCREEN_HEIGHT - PADDLE_HEIGHT;
